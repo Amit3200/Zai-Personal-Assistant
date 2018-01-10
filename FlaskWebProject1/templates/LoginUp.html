@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="gr__localhost"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style id="stndz-style">div[class*="item-container-obpd"], a[data-redirect*="paid.outbrain.com"], a[onmousedown*="paid.outbrain.com"] { display: none !important; } a div[class*="item-container-ad"] { height: 0px !important; overflow: hidden !important; position: absolute !important; } div[data-item-syndicated="true"] { display: none !important; } .grv_is_sponsored { display: none !important; } .zergnet-widget-related { display: none !important; } </style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>Login|Zaipack</title>
+<script>
+    function save(otp) {
+        var t2 = document.getElementById('t2').value;
+        alert(otp);
+        alert(t2);
+        if (otp == t2)
+            alert('Hello Correct Password');
+        else
+            alert("It's Wrong");
+    }
+      </script>
+    <style>
+        #repq
+        {
+            border-radius:50%;
+        }
+        </style>
+    <!-- Bootstrap core CSS -->
+    <link href="static\content\bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="static\content\jumbotron-narrow.css" rel="stylesheet">
+  </head>
+
+  <body data-gr-c-s-loaded="true">
+      <div class="container">
+          <br><br>
+          <form class="form-signin">
+              <div id="1" class="col-lg-6">
+                  <h2 class="form-signin-heading">Please sign in</h2>
+                  <label><h4>User Name</h4></label>
+                  <h4>{{username}}</h4>
+                  <label><h4>OTP</h4></label>
+                  <input type="number" id="t2" class="form-control" placeholder="OTP" required=""><br>
+                  <button class="btn btn-lg btn-primary btn-block" onclick="save({{otp}})>Log in</button>
+                <h2><a href="{{ url_for('zaipack') }}" class="btn btn-success">Zai Speak</a></h2><br>
+                <h2><a href="{{ url_for('home') }}" class="btn btn-success">Home</a></h2>
+              </div>
+          </form>
+          <img src="../static/content/zai.png" width="350px" id="repq">
+      </div>
+  
+</body></html>

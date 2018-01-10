@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="gr__localhost"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style id="stndz-style">div[class*="item-container-obpd"], a[data-redirect*="paid.outbrain.com"], a[onmousedown*="paid.outbrain.com"] { display: none !important; } a div[class*="item-container-ad"] { height: 0px !important; overflow: hidden !important; position: absolute !important; } div[data-item-syndicated="true"] { display: none !important; } .grv_is_sponsored { display: none !important; } .zergnet-widget-related { display: none !important; } </style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>Login|Zaipack</title>
+<script>
+    function save(otp) {
+        var t2 = document.getElementById('t2').value;
+        if (otp == t2) {
+            alert('Hello Correct Password');
+        }
+        else
+            alert("It's Wrong");
+    }
+</script>
+    <style>
+        #repq
+        {
+            border-radius:50%;
+        }
+        </style>
+ 
+  </head>
+<link href="../static/content/bootstrap.min.css" rel="stylesheet" />
+<link href="../static/content/jumbotron-narrow.css" rel="stylesheet" />
+<script src="../static/scripts/jquery.validate.min.js"></script>
+<script src="../static/scripts/jquery-1.10.2.min.js"></script>
+<script src="../static/scripts/jquery-1.10.2.js"></script>
+  <body data-gr-c-s-loaded="true">
+      <div class="container">
+          <!--<form class="form-signin">-->
+              <div id="1" class="col-lg-6">
+                  <h2 class="form-signin-heading">Register at Zai Pack</h2>
+                  <label><h4>User Name</h4></label>
+                  <h5>{{username}}</h5>
+                  <label><h4>Name</h4></label>
+                  <h5>{{name}}</h5>
+                  <label><h4>Date of Birth</h4></label>
+                  <h5>{{dob}}</h5>
+                  <label><h4>Tag Line</h4></label>
+                  <h5>{{tagline}}</h5>
+                  <label><h4>OTP</h4></label>
+                  <input type="password" id="t2" class="form-control" placeholder="Enter Password" required="" name="text1"><br>
+                  <button class="btn btn-lg btn-primary btn-block" onclick="save({{otp}})">Sign in</button>
+                  <h2><a href="{{ url_for('registration') }}" class="btn btn-success">Zai Speak</a></h2>
+                  <h2><a href="{{ url_for('home') }}" class="btn btn-success">Home</a></h2>
+              </div>
+          <!--</form>--><br><br><br>
+          <img src="static\content\zai.png" width="350px" id="repq">
+      </div>
+  
+</body></html>

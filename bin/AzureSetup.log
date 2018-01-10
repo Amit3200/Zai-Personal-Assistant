@@ -1,0 +1,6 @@
+Failed to initialize role.
+
+Exception:
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AzureSetup.Program.ConfigureFastCgi()
+   at AzureSetup.Program.Main(String[] args)
